@@ -8,8 +8,7 @@
 
 body {
   font-family: "Pixelify Sans", sans-serif;
-  background: url("/img/create-a-professional-pixel-art-background-and-scenery.gif")
-    no-repeat center center fixed;
+  background: url("/img/create-a-professional-pixel-art-background-and-scenery.gif") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -75,15 +74,21 @@ main p {
 }
 
 @keyframes tilt-shaking-interval {
-  0%, 80%, 100% {
+
+  0%,
+  80%,
+  100% {
     transform: rotate(0deg);
   }
+
   85% {
     transform: rotate(1.25deg);
   }
+
   90% {
     transform: rotate(-1.25deg);
   }
+
   95% {
     transform: rotate(1.25deg);
   }
@@ -102,13 +107,16 @@ main p {
     left: -100px;
     transform: scaleX(1);
   }
+
   50% {
     left: 102vw;
     transform: scaleX(1);
   }
+
   51% {
     transform: scaleX(-1)
   }
+
   100% {
     left: -40vw;
     transform: scaleX(-1);
@@ -126,10 +134,12 @@ main p {
     right: -100vw;
     transform: scaleX(-1);
   }
+
   50% {
-    right:-20vw;
+    right: -20vw;
     transform: scaleX(-1);
   }
+
   100% {
     right: 110vw;
     transform: scaleX(-1);

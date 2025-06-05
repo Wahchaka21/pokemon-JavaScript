@@ -12,7 +12,7 @@ body {
   background-size: cover;
 }
 
-.nav { 
+.nav {
   background-color: rgb(27, 27, 27);
   padding: 5px;
   position: fixed;
@@ -23,7 +23,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -82,6 +82,7 @@ body {
   0% {
     left: -100px;
   }
+
   100% {
     left: 98vw;
   }
@@ -125,9 +126,11 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.026);
   }
+
   100% {
     transform: scale(1);
   }
@@ -138,6 +141,7 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
+
   100% {
     transform: translateX(200%) rotate(1080deg);
     opacity: 0;
@@ -150,8 +154,8 @@ body {
 
 .bulle-dialogue {
   position: fixed;
-  bottom: 350px; 
-  right: 200px; 
+  bottom: 350px;
+  right: 200px;
   max-width: 300px;
   background: #f3ead0;
   border: 3px solid black;
@@ -169,8 +173,8 @@ body {
 .bulle-dialogue::after {
   content: "";
   position: absolute;
-  bottom: -20px; 
-  right: 15px; 
+  bottom: -20px;
+  right: 15px;
   border-width: 11px 11px 0 11px;
   border-style: solid;
   border-color: white transparent;
@@ -191,7 +195,7 @@ body {
 .page-container {
   color: #FECA14;
   background: url(/img/fond-plat-demi-teinte-noir-blanc.png);
-  background-color:  rgb(43, 40, 40);
+  background-color: rgb(43, 40, 40);
   background-size: 32%;
   border-bottom: rgb(0, 0, 0) 3px solid;
   box-shadow: 0 5px 7px 1px rgba(29, 29, 29, 0.822);
@@ -219,10 +223,11 @@ body {
   }
 
   .bulle-dialogue {
-    bottom: 260px; 
-    right: 150px; 
+    bottom: 260px;
+    right: 150px;
     max-width: 250px;
   }
+
   .page-container {
     width: 69.2%;
     background-size: 15%;
@@ -246,7 +251,7 @@ body {
     gap: 40px;
     padding: 50px;
   }
-  
+
   .pokemon {
     width: 170px;
     height: 140px;
@@ -283,41 +288,41 @@ body {
 }
 
 #pokemonDisplay {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    border: 1px solid black;
-    width: 30%;
-    height: 15rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease-in-out;
-    filter: brightness(0.8);
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 30%;
+  height: 15rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(0.8);
 }
 
 #pokemonDisplay:hover {
-    transform: scale(1.06);
-    filter: brightness(1);
+  transform: scale(1.06);
+  filter: brightness(1);
 }
 
 #headerContainer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #pokemonDisplayIdentity {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.25rem;
-    background-color: rgb(230, 202, 176);
-    border-radius: 10px;
-    width: 12rem;
-    margin: 0 auto;
-    margin-top: 0.8rem;
-    font-family: sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  background-color: rgb(230, 202, 176);
+  border-radius: 10px;
+  width: 12rem;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  font-family: sans-serif;
 }
 
 /* #pokemonDisplayIdentity:hover {
@@ -325,107 +330,107 @@ body {
     
 } */
 
-#pokemonDisplayIdentity > a {
-    text-decoration: none;
-    color: black;
+#pokemonDisplayIdentity>a {
+  text-decoration: none;
+  color: black;
 }
 
-#pokemonDisplayIdentity > a:hover {
-    text-decoration: none;
-    color: red;
+#pokemonDisplayIdentity>a:hover {
+  text-decoration: none;
+  color: red;
 }
 
 #pokemonDisplayName {
-    margin-right: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 #pokemonDisplayId {
-    margin: 5px;
+  margin: 5px;
 }
 
 #pokemonDisplayImage {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-#pokemonImage > img {
-    width: 10rem;
+#pokemonImage>img {
+  width: 10rem;
 }
 
 /* détail du pokémon */
 
 #pokemonDisplayDetail {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    border: 1px solid black;
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 1rem;
-    display: flex;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #headerContainerDetail {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #pokemonDisplayIdentityDetail {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.25rem;
-    background-color: rgb(204, 231, 231);
-    border-radius: 10px;
-    width: 30rem;
-    margin: 0 auto;
-    margin-top: 0.15rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  background-color: rgb(204, 231, 231);
+  border-radius: 10px;
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 0.15rem;
 }
 
 #pokemonDisplayIdentityDetail:hover {
-    background-color: rgb(172, 231, 192);  
+  background-color: rgb(172, 231, 192);
 }
 
 #pokemonDisplayNameDetail {
-    margin-right: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 #pokemonDisplayIdDetail {
-    margin: 5px;
+  margin: 5px;
 }
 
 #pokemonDisplayImageDetail {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-#pokemonImageDetail > img {
-    width: 40rem;
+#pokemonImageDetail>img {
+  width: 40rem;
 }
 
 #typeContainerDetail {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-#typeContainerDetail > img {
-    width: 2.5rem;
+#typeContainerDetail>img {
+  width: 2.5rem;
 }
 
 #allTypesDetail {
-    display: flex;
-    flex-direction:row;
+  display: flex;
+  flex-direction: row;
 }
 
 
 #pokemonInfoEvolutionDetail {
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 #statsContainerDetail {
@@ -436,7 +441,7 @@ body {
   margin: 0 auto;
 }
 
-#titleDetail{
+#titleDetail {
   display: flex;
   justify-content: center;
 }
