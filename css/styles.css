@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  background: url("/img/create-a-professional-pixel-art-background-and-scenery.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header img.titre {
+  width: 30%;
+  height: auto;
+}
+
+.header h2 {
+  font-size: 2rem;
+  text-shadow: #fff 1px -1px 16px;
+  margin-top: -40px;
+}
+
+main p {
+  font-size: 1.6rem;
+  margin: 20px auto 30px;
+  max-width: 90%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton {
+  display: inline-block;
+}
+
+.pokeball {
+  position: relative;
+  width: 40vw;
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0.6;
+}
+
+.pokeball:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+.pokeball-wrapper {
+  animation: tilt-shaking-interval 3s infinite;
+  display: inline-block;
+}
+
+@keyframes tilt-shaking-interval {
+  0%, 80%, 100% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(1.25deg);
+  }
+  90% {
+    transform: rotate(-1.25deg);
+  }
+  95% {
+    transform: rotate(1.25deg);
+  }
+}
+
+.pikachu {
+  position: absolute;
+  bottom: 10px;
+  left: -100px;
+  width: 100px;
+  animation: runAcross 15s linear infinite;
+}
+
+@keyframes runAcross {
+  0% {
+    left: -100px;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 102vw;
+    transform: scaleX(1);
+  }
+  51% {
+    transform: scaleX(-1)
+  }
+  100% {
+    left: -40vw;
+    transform: scaleX(-1);
+  }
+}
+
+.john-chasing {
+  position: absolute;
+  top: 820px;
+  animation: chasing 15s linear infinite;
+}
+
+@keyframes chasing {
+  0% {
+    right: -100vw;
+    transform: scaleX(-1);
+  }
+  50% {
+    right:-20vw;
+    transform: scaleX(-1);
+  }
+  100% {
+    right: 110vw;
+    transform: scaleX(-1);
+  }
+}
+
+@media (max-width: 1920px) {
+  .john-chasing {
+    top: 785px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .pokeball {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header img.titre {
+    width: 50%;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+    margin-top: -20px;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  .pokeball {
+    width: 30vw;
+  }
+
+  .pikachu {
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header img.titre {
+    width: 70%;
+  }
+
+  .header h2 {
+    font-size: 1.3rem;
+    margin-top: -5px;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  .pokeball {
+    width: 20vw;
+  }
+
+  .pikachu {
+    width: 60px;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokétintion - Pokédex</title>
+  <link rel="stylesheet" href="css/pokedex.css" />
+  <script src="script/script.js"></script>
+  <script src="script/john.js"></script>
+  <link rel="shortcut icon" href="img/pokeball.svg" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li><a href="index.html"><img class="poketintouin" src="img/Poketintoin.png" alt="logo"></a></li>
+        <li class="li"><a href="index.html" class="nav-item home">Accueil</a></li>
+        <li class="li"><a href="liste.html" class="nav-item pokedex">Pokédex</a></li>
+        <img class="pikachu" src="img/pikachu-running.gif" alt="Pikachu qui court" />
+      </ul>
+    </nav>
+  </header>
+  <div class="john-lab">
+    <img class="labs" src="/img/lab.png" alt="">
+    <img class="john_goat" id="john" src="img/1profJohnBase.png" alt="Proffesseur John">
+    <div class="bulle-dialogue">
+      <div id="texte-bulle" class="bulle"></div>
+    </div>
+  </div>
+  <div class="page-container">
+    <h2 class="titre">Cliquez sur le professeur John si vous avez besoin d'un guide.</h2>
+    <p>(Pas trop quand même, il n'aime pas qu'on le fasse chier..)</p>
+    <input class="search" type="search" placeholder="Nom ou ID du Pokémon">
+  </div>
+  <div id="pokeList"></div>
+  <div class="spacer"></div>
+</body>
+
+</html>
